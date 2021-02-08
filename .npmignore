@@ -3,4 +3,5 @@
 *.ttf
 *.tgz
 reference.py
-/node_modules
+.editorconfig
+.github
