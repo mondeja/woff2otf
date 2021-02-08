@@ -2,6 +2,14 @@
   "name": "woff2otf",
   "version": "0.0.1",
   "description": "Convert WOFF font files to OTF",
+  "keywords": [
+    "font",
+    "fonts",
+    "woff",
+    "otf",
+    "opentype",
+    "graphics"
+  ],
   "main": "src/woff2otf.js",
   "browser": "src/woff2otf.js",
   "bin": {

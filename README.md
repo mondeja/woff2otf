@@ -20,7 +20,7 @@ npm install woff2otf
 woff2otf fontToConvert.woff outputFont.otf
 ```
 
-WARNING: if the output file exists will be overwritten!
+**WARNING: if the output file exists will be overwritten!**
 
 ### NodeJS
 
@@ -35,7 +35,7 @@ fs.writeFileSync('path/to/file.otf', otfFileBuffer);
 
 ## Thanks to
 
-- [@hanikesn](https://github.com/hanikesn) because this program is a port from Python of [hanikesn/woff2otf](https://github.com/hanikesn/woff2otf).
+[@hanikesn](https://github.com/hanikesn) because this program is a port from Python of [hanikesn/woff2otf](https://github.com/hanikesn/woff2otf)
 
 [npm-link]: https://www.npmjs.com/package/woff2otf
 [npm-version-image]: https://img.shields.io/npm/v/woff2otf
