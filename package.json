@@ -1,6 +1,6 @@
 {
   "name": "woff2otf",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Convert WOFF font files to OTF",
   "keywords": [
     "font",
