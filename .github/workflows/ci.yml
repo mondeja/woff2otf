@@ -10,25 +10,37 @@ on:
   workflow_dispatch:
 
 jobs:
+  lint:
+    name: Linting
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use NodeJS v14
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: npm ci
+      - name: Linting
+        run: npm run lint
+
   npm:
     if: startsWith(github.ref, 'refs/tags/')
+    needs: lint
     name: NPM Package
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Use NodeJS v14
-      uses: actions/setup-node@v2.1.4
-      with:
-        node-version: 14.x
-    - name: Install dependencies
-      run: npm ci
-    - name: Linting
-      run: npm run lint
-    - name: Deploy to NPM
-      uses: JS-DevTools/npm-publish@v1.4.3
-      with:
-        token: ${{ secrets.NPM_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use NodeJS v14
+        uses: actions/setup-node@v2.1.4
+        with:
+          node-version: 14.x
+      - name: Deploy to NPM
+        uses: JS-DevTools/npm-publish@v1.4.3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
 
   release:
     name: Release
