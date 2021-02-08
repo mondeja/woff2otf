@@ -18,7 +18,6 @@ if (require.main === module) {
 
   const fs = require('fs');
   const woff2otf = require('./woff2otf');
-  console.log(woff2otf);
 
   if (fs.existsSync(args[1])) {
     fs.unlinkSync(args[1]);

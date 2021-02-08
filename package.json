@@ -1,6 +1,6 @@
 {
   "name": "woff2otf",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Convert WOFF font files to OTF",
   "keywords": [
     "font",
@@ -42,8 +42,7 @@
   "files": "src",
   "eslintConfig": {
     "env": {
-      "node": true,
-      "jest": true
+      "node": true
     },
     "extends": "mourner",
     "rules": {
