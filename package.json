@@ -28,7 +28,7 @@
     "lintfix": "npm run lint -- --fix"
   },
   "devDependencies": {
-    "eslint": "7.19.0",
+    "eslint": "7.23.0",
     "eslint-config-mourner": "3.0.0"
   },
   "repository": {
