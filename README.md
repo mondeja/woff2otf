@@ -41,5 +41,5 @@ fs.writeFileSync('path/to/file.otf', otfFileBuffer);
 [npm-version-image]: https://img.shields.io/npm/v/woff2otf
 [license-image]: https://img.shields.io/npm/l/woff2otf?color=brightgreen
 [license-link]: https://github.com/mondeja/woff2otf/blob/master/LICENSE
-[ci-image]: https://img.shields.io/github/workflow/status/mondeja/woff2otf/CI
+[ci-image]: https://img.shields.io/github/actions/workflow/status/mondeja/woff2otf/ci.yml?branch=master
 [ci-link]: https://github.com/mondeja/woff2otf/actions?query=workflow%3ACI
